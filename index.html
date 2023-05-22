@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Per capita income calculation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculadora de Renda Per Capita</title>
 </head>
 <body>
-    <aside>
-        <p>Número de dependentes *</p>
-        <input id="number_of_dependents" type="text">
+    <h1>Calculadora de Renda Per Capita</h1>
+  
+  <form id="formulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+    
+    <label for="cep">CEP: *</label>
+    <input type="text" id="cep" name="cep" required><br><br>
+    
+    <label for="renda">Renda Mensal: *</label>
+    <input type="number" id="renda" name="renda" required><br><br>
+    
+    <label for="dependentes">Número de Dependentes: *</label>
+    <input type="number" id="dependentes" name="dependentes" required><br><br>
+    
+    <input type="submit" value="Calcular">
+  </form>
 
-        <p>Nome</p>
-        <input id="name" type="text">
-
-        <p>Renda mensal *</p>
-        <input id="monthly_income" type="text">
-
-        <p>CEP *</p>
-        <input id="monthly_income" type="text">
-
-        <button id="submit">Enviar</button>
-    </aside>
-
-    <nav>
-
-    </nav>
+  <script src="script.js"></script>
 </body>
 </html>
