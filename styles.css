@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  :root {
+    font-size: 62.5%;
+  }
   
   body {
     background-color: #242424;
@@ -19,10 +23,16 @@
     text-align: center;
     margin: 50px auto;
   }
+
+  h1 strong {
+    color: #23bd37;
+    font-weight: 700;
+  }
   
   form {
     width: 30%;
     margin: 0 auto 30px;
+    border-radius: 14px;
     padding: 30px;
     background-color: #374151;
   }
@@ -31,7 +41,7 @@
     display: block;
     margin-bottom: 5px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 900;
     color: #E5E7EB;
   }
@@ -47,7 +57,7 @@
     color: #E5E7EB;
   }
   
-  input[type="submit"] {
+  input[type="button"] {
     width: 90%;
     padding: 10px;
     background-color: #23bd37;
@@ -57,7 +67,15 @@
     cursor: pointer;
   }
   
-  input[type="submit"]:hover {
+  input[type="button"]:hover {
     background-color: #1ea330;
   }
   
+  #message-container {
+    background-color: #374151;
+    color: #E5E7EB;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+  }

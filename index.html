@@ -12,7 +12,7 @@
     <title>Calculadora de Renda Per Capita</title>
 </head>
 <body>
-    <h1>Calculadora de Renda Per Capita</h1>
+    <h1>Calculadora de Renda <strong>Per</strong>Capita</h1>
   
   <form id="formulario">
     <label for="nome">Nome:</label>
@@ -27,8 +27,11 @@
     <label for="dependentes">Número de Dependentes: *</label>
     <input type="number" id="dependentes" name="dependentes" required><br><br>
     
-    <input type="submit" value="Calcular">
+    <input id="button" type="button" value="Calcular">
   </form>
+
+  <div id="message-container"></div>
+
 
   <script src="script.js"></script>
 </body>
