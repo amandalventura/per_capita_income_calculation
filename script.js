@@ -16,24 +16,39 @@ button.addEventListener("click", async () => {
 
     const data = await response.json();
 
-    const messageContainer = document.querySelector("#message-container");
-    messageContainer.innerHTML = "";
+    openModal(data)
 
-    if (data.name) {
-        const nameMessage = document.createElement("p");
-        nameMessage.textContent = `Nome do titular: ${data.name}`;
-        messageContainer.appendChild(nameMessage);
-    }
+});
 
-    if (data.address) {
-        const addressMessage = document.createElement("p");
-        addressMessage.textContent = `Endereço completo: ${data.address.logradouro}, ${data.address.bairro}, ${data.address.localidade} - ${data.address.uf}`;
-        messageContainer.appendChild(addressMessage);
-    }
+const close = document.querySelector("#close");
+function openModal(data) {
+    const modal = document.querySelector("#message-container")
+    modal.classList.toggle("open")
 
-    if (data.candidates) {
-        const incomeMessage = document.createElement("p");
-        incomeMessage.textContent = `Valor da renda per capita: R$ ${data.candidates}`;
-        messageContainer.appendChild(incomeMessage);
+    if (modal.classList.contains("open")) {
+        const resultName = document.querySelector("#resultName")
+        resultName.innerHTML = data.name;
+
+        const resultRua = document.querySelector("#resultRua")
+        resultRua.innerHTML = data.address.logradouro;
+
+        const resultBairro = document.querySelector("#resultBairro")
+        resultBairro.innerHTML = data.address.bairro;
+
+        const resultCEP = document.querySelector("#resultCEP")
+        resultCEP.innerHTML = data.address.cep;
+
+        const resultMunicípio = document.querySelector("#resultMunicípio")
+        resultMunicípio.innerHTML = data.address.localidade;
+
+        const resultUf = document.querySelector("#resultUf")
+        resultUf.innerHTML = data.address.uf;
+
+        const resultPerCapitaIncome = document.querySelector("#resultPerCapitaIncome")
+        resultPerCapitaIncome.innerHTML = data.candidates;
     }
+}
+
+close.addEventListener("click", () => {
+    openModal();
 });

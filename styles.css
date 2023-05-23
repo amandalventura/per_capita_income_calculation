@@ -19,9 +19,11 @@
   
   h1 {
     color: #ffffff;
+    font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    margin: 50px auto;
+    padding: 20px;
+    margin: 0px auto;
   }
 
   h1 strong {
@@ -72,10 +74,44 @@
   }
   
   #message-container {
-    background-color: #374151;
+    width: 300px;
+    position: relative;
+    background-color: #111827;
     color: #E5E7EB;
     font-size: 2rem;
-    padding: 20px;
+    padding: 40px 20px 20px;
     border-radius: 4px;
     text-align: center;
+    display: none;
+  }
+
+  #message-container.open {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    gap: 6px;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #message-container button {
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    color: #F9FAFB;
+    font-size: 2rem;
+    transition: all .5s;
+
+    cursor: pointer;
+    border: none;
+  }
+
+  #message-container button:hover {
+    color: #ff0000;
   }
