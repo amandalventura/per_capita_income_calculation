@@ -33,14 +33,22 @@ Certifique-se de ter as seguintes ferramentas instaladas em seu computador:
 
    ```shell
    npm install
+   
+### Executando a Aplicação
+Após concluir a instalação, você pode iniciar o servidor de desenvolvimento local. Use o seguinte comando:
+
+    ```shell
+    npm start
+   
+Isso iniciará a aplicação em seu navegador padrão. Se não abrir automaticamente, acesse http://localhost:3000 no seu navegador.
+
 ### Segundo passo:
-1. Abra o aplicativo em seu navegador.
+1. Após abrir a aplicação em seu navegador.
 2. Preencha os campos obrigatórios: CEP, Renda Mensal e Número de dependentes.
 3. Opcionalmente, você pode inserir seu nome.
 4. Clique no botão "Calcular".</br>
 Os resultados serão exibidos na tela, incluindo o nome do titular (se fornecido), endereço completo e o valor da renda per capita.
 # 
-
 
 # Per Capita Income Calculator
 This is a web application that allows you to calculate the monthly per capita income of a family.
@@ -74,6 +82,14 @@ Make sure you have the following tools installed on your computer:
 
    ```shell
    npm install
+   
+### Running the Application
+After completing the installation, you can start the local development server. Use the following command:
+
+    ```shell
+    npm start
+   
+This will start the application in your default browser. If it doesn't open automatically, you can manually open it by entering the URL "http://localhost:3000" in your browser's address bar.
 ### Step 2:
 1. Open the application in your browser.
 2. Fill in the required fields: ZIP Code, Monthly Income, and Number of Dependents.
