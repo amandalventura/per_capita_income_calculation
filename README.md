@@ -40,7 +40,7 @@ Após concluir a instalação, você pode iniciar o servidor de desenvolvimento 
     ```shell
     npm start
    
-Isso iniciará a aplicação em seu navegador padrão. Se não abrir automaticamente, acesse http://localhost:3000 no seu navegador.
+Isso iniciará a aplicação em seu navegador padrão. 
 
 ### Segundo passo:
 1. Após abrir a aplicação em seu navegador.
@@ -89,7 +89,7 @@ After completing the installation, you can start the local development server. U
     ```shell
     npm start
    
-This will start the application in your default browser. If it doesn't open automatically, you can manually open it by entering the URL "http://localhost:3000" in your browser's address bar.
+This will start the application in your default browser. 
 ### Step 2:
 1. Open the application in your browser.
 2. Fill in the required fields: ZIP Code, Monthly Income, and Number of Dependents.
