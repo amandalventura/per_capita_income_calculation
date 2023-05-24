@@ -14,6 +14,26 @@ Após preencher os dados necessários, o usuário deve clicar no botão "Calcula
 - Endereço completo (incluindo o CEP)
 - Valor da renda per capita
 ## Como usar
+
+### Primeiro passo:
+Este é o front-end da aplicação web. Ele fornece a interface do usuário e interage com o back-end para processar dados e exibir informações.
+
+#### Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas em seu computador:
+
+- Node.js: [Link para download](https://nodejs.org)
+- npm (Node Package Manager): Geralmente, vem com o Node.js.
+
+## Instalação
+
+1. Faça o clone deste repositório para o seu computador.
+2. Abra um terminal e navegue até o diretório do front-end.
+3. Execute o seguinte comando para instalar as dependências:
+
+   ```shell
+   npm install
+### Segundo passo:
 1. Abra o aplicativo em seu navegador.
 2. Preencha os campos obrigatórios: CEP, Renda Mensal e Número de dependentes.
 3. Opcionalmente, você pode inserir seu nome.
@@ -21,24 +41,42 @@ Após preencher os dados necessários, o usuário deve clicar no botão "Calcula
 Os resultados serão exibidos na tela, incluindo o nome do titular (se fornecido), endereço completo e o valor da renda per capita.
 # 
 
+
 # Per Capita Income Calculator
 This is a web application that allows you to calculate the monthly per capita income of a family.
 
 ## Features
-The application prompts the user to provide four necessary data points to calculate the per capita income of the family:
+The application requests four pieces of information from the user to calculate the per capita income:
 
 1. Name (optional)
-2. ZIP code (CEP)
+2. ZIP Code
 3. Monthly Income
-4. Number of dependents </br>
-After filling in the required data, the user should click the "Calculate" button. The request will be processed and the following information will be returned:
-
-- Name of the head of the household (if provided)
-- Complete address (including ZIP code)
+4. Number of Dependents </br> </br>
+After filling in the necessary data, the user should click the "Calculate" button. The request will be processed and the following information will be returned:
+- Name of the account holder (if provided)
+- Complete address (including ZIP Code)
 - Per capita income value
 ## How to Use
-1. Open the application in your web browser.
-2. Fill in the required fields: ZIP code, Monthly Income, and Number of dependents.
+### Step 1:
+This is the front-end of the web application. It provides the user interface and interacts with the back-end to process data and display information.
+
+#### Prerequisites
+Make sure you have the following tools installed on your computer:
+
+- Node.js: Download link (https://nodejs.org)
+- npm (Node Package Manager): Usually comes with Node.js.
+## Installation
+1. Clone this repository to your computer.
+
+2. Open a terminal and navigate to the front-end directory.
+
+3. Run the following command to install the dependencies:
+
+   ```shell
+   npm install
+### Step 2:
+1. Open the application in your browser.
+2. Fill in the required fields: ZIP Code, Monthly Income, and Number of Dependents.
 3. Optionally, you can enter your name.
 4. Click the "Calculate" button. </br>
-The results will be displayed on the screen, including the name of the head of the household (if provided), the complete address, and the per capita income value.
+The results will be displayed on the screen, including the account holder's name (if provided), complete address, and the per capita income value.
